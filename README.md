@@ -5,6 +5,15 @@
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Greymattersbot/link-search-bot---mdisk-search-bot&branch=main&name=linkfindbot)
 
+<details><summary><b>Deploy to Heroku</b></summary>
+<p>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/ROYAL-JATT/link-search-bot---mdisk-search-bot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
+</details>
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/TGNVS/link-Search-Bot/main/screenshort/Screenshot%20mdis180420.png" alt="Koyeb Screenshot">
 </p>
