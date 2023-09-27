@@ -8,7 +8,7 @@
         "search",
         "bot"
     ],
-    "repository": "https://github.com/GreyMattersBot",
+    "repository": "https://github.com/ROYAL-JATT/link-search-bot---mdisk-search-bot",
     "website": "https://telegram.dog/GreyMatter_Bots",
     "success_url": "https://t.me/GreyMatter_Bot",
     "env": {
