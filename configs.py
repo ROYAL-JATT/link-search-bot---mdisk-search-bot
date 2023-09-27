@@ -16,39 +16,39 @@ class Config(object):
     
     
     
-🤖 My Name: <a href='https://youtube.com/@GreyMattersBot'>Link Search Bot</a>
+🤖 Mʏ Nᴀᴍᴇ:<a href='https://t.me/MOVIES_VILLA_UPDATE'>Mᴏᴠɪᴇs ᴠɪʟʟᴀ</a>
 
-📝 Language : <a href='https://www.python.org'> Python V3</a>
+📝 Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org'> Pʏᴛʜᴏɴ V𝟹</a>
 
-📚 Library: <a href='https://docs.pyrogram.org'> Pyrogram</a>
+📚 Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org'> Pʏʀᴏɢʀᴀᴍ</a>
 
-📡 Server: <a href='koyeb.com'>Koyeb</a>
+📡 Sᴇʀᴠᴇʀ: <a href='heroku.com'>Hᴇʀᴏᴋᴜ</a>
 
-👨‍💻 Created By: <a href='https://t.me/GreyMatter_Bot'>GreyMatter's Bot</a></b>
+👨‍💻 Cʀᴇᴀᴛᴇᴅ Bʏ: <a href='https://t.me/MOVIES_VILLA_UPDATE'>Mᴏᴠɪᴇs ᴠɪʟʟᴀ</a></b>
 """
 
-    ABOUT_HELP_TEXT = """<b>👨‍💻 Creator : <a href='https://t.me/GreyMatter_Bot'>GreyMatter's Bot</a>
-If You Want Your Own Bot Like This Then You Can Contact Our Creator.</b>
+    ABOUT_HELP_TEXT = """<b>👨‍💻 Cʀᴇᴀᴛᴏʀ : <a href='https://t.me/ROYAL_GAGAN_DEEP_SINGH_MEHRA'>Mᴏᴠɪᴇs ᴠɪʟʟᴀ</a>
+Iғ Yᴏᴜ Wᴀɴᴛ Yᴏᴜʀ Oᴡɴ Bᴏᴛ Lɪᴋᴇ Tʜɪs Tʜᴇɴ Yᴏᴜ Cᴀɴ Cᴏɴᴛᴀᴄᴛ Oᴜʀ Cʀᴇᴀᴛᴏʀ.</b>
 """
 
     HOME_TEXT = """
-<b>Hey! {}😅,
+<b>Hᴇʏ! {}😅,
 
-I'm Link Search Bot.🤖
+I'ᴍ Lɪɴᴋ Sᴇᴀʀᴄʜ Bᴏᴛ.🤖
 
-I Can Search 🔍 What You Want❗
+I Cᴀɴ Sᴇᴀʀᴄʜ 🔍 Wʜᴀᴛ Yᴏᴜ Wᴀɴᴛ❗
 
-<a>Made With ❤ By @GreyMatter_Bots</a></b>
+<a>Mᴀᴅᴇ Wɪᴛʜ ❤ Bʏ <a href='https://t.me/ROYAL_GAGAN_DEEP_SINGH_MEHRA'>Oᴡɴᴇʀ</a></b>
 """
 
 
     START_MSG = """
-<b>Hey! {}😅,
+<b>Hᴇʏ! {}😅,
 
-I'm Link Search Bot.🤖
+I'ᴍ Lɪɴᴋ Sᴇᴀʀᴄʜ Bᴏᴛ.🤖
 
-I Can Search 🔍 What You Want❗
+I Cᴀɴ Sᴇᴀʀᴄʜ 🔍 Wʜᴀᴛ Yᴏᴜ Wᴀɴᴛ❗
 
-<a>Made With ❤ By @GreyMatter_Bots</a></b>
+<a>Mᴀᴅᴇ Wɪᴛʜ ❤ Bʏ <a href='https://t.me/ROYAL_GAGAN_DEEP_SINGH_MEHRA'>Oᴡɴᴇʀ</a></b>
 """
 
