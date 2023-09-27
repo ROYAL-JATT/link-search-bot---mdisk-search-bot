@@ -23,13 +23,13 @@ User = Client(
 
 @Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(_, event: Message):
-	await event.reply_photo("https://telegra.ph/file/19eeb26fa2ce58765917a.jpg",
+	await event.reply_photo("https://telegra.ph/file/7de1d9ff50461400a22b6.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-					[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')],
-					[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")],
-					[InlineKeyboardButton("Donation", callback_data="Help_msg"),
-                                        InlineKeyboardButton("About", callback_data="About_msg")]
+					[InlineKeyboardButton('❤ Dᴏɴᴀᴛɪᴏɴ Lɪɴᴋ', url='https://www.telegram.dog/movies_villa_backup')],
+					[InlineKeyboardButton("Uᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/MOVIES_VILLA_UPDATE")],
+					[InlineKeyboardButton("Dᴏɴᴀᴛɪᴏɴ", callback_data="Help_msg"),
+                                        InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="About_msg")]
 				]))
 
 @Bot.on_message(filters.private & filters.command("help"))
@@ -37,9 +37,9 @@ async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-		[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
-	 ],[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots"), 
-             InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝", callback_data="About_msg")]
+		[InlineKeyboardButton('❤ Dᴏɴᴀᴛɪᴏɴ Lɪɴᴋ', url='https://www.telegram.dog/movies_villa_backup')
+	 ],[InlineKeyboardButton("Uᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/MOVIES_VILLA_UPDATE"), 
+             InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="About_msg")]
         ])
     )
 
@@ -47,7 +47,7 @@ async def help_handler(_, event: Message):
 async def inline_handlers(_, event: Message):
     if event.text == '/start':
         return
-    answers = f'**📂 Results For ➠ {event.text} \n\n➠ Type Only Movie Name With Correct Spelling.✍️\n➠ Add Year For Better Result.🗓️\n➠ Join @GreyMatter_Bots\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n**'
+    answers = f'**📂 Rᴇsᴜʟᴛs Fᴏʀ ➠ {event.text} \n\n➠ Tʏᴘᴇ Oɴʟʏ Mᴏᴠɪᴇ Nᴀᴍᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ.✍️\n➠ Aᴅᴅ Yᴇᴀʀ Fᴏʀ Bᴇᴛᴛᴇʀ Rᴇsᴜʟᴛ.🗓️\n➠ Jᴏɪɴ @MOVIES_VILLA_UPDATE\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n**'
     async for message in User.search_messages(chat_id=Config.CHANNEL_ID, limit=50, query=event.text):
         if message.text:
             thumb = None
@@ -56,14 +56,14 @@ async def inline_handlers(_, event: Message):
             if "|||" in message.text:
                 f_text = message.text.split("|||", 1)[0]
                 msg_text = message.text.html.split("|||", 1)[0]
-            answers += f'**🍿 Title ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n📜 About ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\nLink Will Auto Delete In 60Sec...⏰\n\n**'
+            answers += f'**🍿 Tɪᴛʟᴇ ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n📜 Aʙᴏᴜᴛ ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\nLɪɴᴋ Wɪʟʟ Aᴜᴛᴏ Dᴇʟᴇᴛᴇ Iɴ 𝟼𝟶Sᴇᴄ...⏰\n\n**'
     try:
         msg = await event.reply_text(answers)
         await asyncio.sleep(65)
         await event.delete()
         await msg.delete()
     except:
-        print(f"[{Config.BOT_SESSION_NAME}] - Failed to Answer - {event.from_user.first_name}")
+        print(f"[{Config.BOT_SESSION_NAME}] - Fᴀɪʟᴇᴅ ᴛᴏ Aɴsᴡᴇʀ - {event.from_user.first_name}")
 
 
 @Bot.on_callback_query()
@@ -76,13 +76,13 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
+						InlineKeyboardButton('❤ Dᴏɴᴀᴛɪᴏɴ Lɪɴᴋ', url='https://www.telegram.dog/movies_villa_backup')
 					],
 					[
-						InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")
+						InlineKeyboardButton("Uᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/MOVIES_VILLA_UPDATE")
 					],
 					[
-						InlineKeyboardButton("Home", callback_data="gohome")
+						InlineKeyboardButton("Hᴏᴍᴇ", callback_data="gohome")
 					]
 				]
 			),
@@ -95,14 +95,14 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-					InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
+					InlineKeyboardButton('❤ Dᴏɴᴀᴛɪᴏɴ Lɪɴᴋ, url='https://www.telegram.dog/movies_villa_backup')
 					],
 					[
-					InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")
+					InlineKeyboardButton("Uᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/MOVIES_VILLA_UPDATE")
 					], 
                                         [
-					InlineKeyboardButton("Home", callback_data="gohome"),
-					InlineKeyboardButton("About", callback_data="About_msg")
+					InlineKeyboardButton("Hᴏᴍᴇ", callback_data="gohome"),
+					InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="About_msg")
 					]
 				]
 			),
@@ -115,14 +115,14 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
                                         [
-					InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
+					InlineKeyboardButton('❤ Dᴏɴᴀᴛɪᴏɴ Lɪɴᴋ', url='https://www.telegram.dog/movies_villa_backup')
 					],
 					[
-					InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")
+					InlineKeyboardButton("Uᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/MOVIES_VILLA_UPDATE")
 					],
 					[
-					InlineKeyboardButton("Donation", callback_data="Help_msg"),
-					InlineKeyboardButton("About", callback_data="About_msg")
+					InlineKeyboardButton("Dᴏɴᴀᴛɪᴏɴ", callback_data="Help_msg"),
+					InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="About_msg")
 					]
 				]
 			),
