@@ -95,7 +95,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-					InlineKeyboardButton('❤ Dᴏɴᴀᴛɪᴏɴ Lɪɴᴋ, url='https://www.telegram.dog/movies_villa_backup')
+					InlineKeyboardButton('❤ Dᴏɴᴀᴛɪᴏɴ Lɪɴᴋ', url='https://www.telegram.dog/movies_villa_backup')
 					],
 					[
 					InlineKeyboardButton("Uᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/MOVIES_VILLA_UPDATE")
