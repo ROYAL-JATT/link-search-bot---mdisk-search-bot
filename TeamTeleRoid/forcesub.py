@@ -11,7 +11,7 @@ async def ForceSub(bot: Client, cmd: Message):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=cmd.from_user.id,
-                text="You Are Ban To Use Me. Contact My [GreyMatter's Bot](https://www.telegram.dog/greymatter_bots).",
+                text="Yᴏᴜ Aʀᴇ Bᴀɴ Tᴏ Usᴇ Mᴇ. Cᴏɴᴛᴀᴄᴛ Mʏ [Movies villa](https://www.telegram.dog/MOVIES_VILLA_UPDATE).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -23,19 +23,19 @@ async def ForceSub(bot: Client, cmd: Message):
             await asyncio.sleep(e.x)
             invite_link = await bot.create_chat_invite_link(chat_id=(int(Config.UPDATES_CHANNEL) if Config.UPDATES_CHANNEL.startswith("-100") else Config.UPDATES_CHANNEL))
         except Exception as err:
-            print(f"Unable To Do Force Subscribe To {Config.UPDATES_CHANNEL}\n\nError: {err}")
+            print(f"Uɴᴀʙʟᴇ Tᴏ Dᴏ Fᴏʀᴄᴇ Sᴜʙsᴄʀɪʙᴇ Tᴏ {Config.UPDATES_CHANNEL}\n\nError: {err}")
             return 200
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Join Our Update Channel To Use This Bot❗**\n\n"
-                 "Due To Overload, Only Channel Subscribers Can Use This Bot❗",
+            text="**Jᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Tʜɪs Bᴏᴛ❗**\n\n"
+                 "Dᴜᴇ Tᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs Cᴀɴ Usᴇ Tʜɪs Bᴏᴛ❗",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🍿 Join Update Channel 🍿", url=invite_link.invite_link)
+                        InlineKeyboardButton("🍿 Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 🍿", url=invite_link.invite_link)
                     ],
                     [
-                        InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshForceSub")
+                        InlineKeyboardButton("🔄 Rᴇғʀᴇsʜ 🔄", callback_data="refreshForceSub")
                     ]
                 ]
             ),
@@ -45,7 +45,7 @@ async def ForceSub(bot: Client, cmd: Message):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Somthing Went Wrong. Contact My [GreyMatter's Support Group](https://www.telegram.dog/GreyMatters_Bots_Discussion).",
+            text="Sᴏᴍᴛʜɪɴɢ Wᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ Mʏ [Mᴏᴠɪᴇs ᴠɪʟʟᴀ sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ](https://www.telegram.dog/movies_villa_backup).",
             parse_mode="markdown",
             disable_web_page_preview=True
         )
