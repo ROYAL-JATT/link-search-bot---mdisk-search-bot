@@ -14,9 +14,8 @@ Bot = Client(
     bot_token=Config.BOT_TOKEN
 )
 
-# User Client for Searching in Channel.
 User = Client(
-    session_name=Config.USER_SESSION_STRING,
+    Config.USER_SESSION_STRING,
     api_id=Config.API_ID,
     api_hash=Config.API_HASH
 )
