@@ -1,4 +1,4 @@
-from configs import Config
+lfrom configs import Config
 from pyrogram import Client, filters, idle
 from pyrogram.errors import QueryIdInvalid
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InlineQuery, InlineQueryResultArticle, \
@@ -14,8 +14,9 @@ Bot = Client(
     bot_token=Config.BOT_TOKEN
 )
 
+# User Client for Searching in Channel.
 User = Client(
-    Config.USER_SESSION_STRING,
+    session_name=Config.USER_SESSION_STRING,
     api_id=Config.API_ID,
     api_hash=Config.API_HASH
 )
