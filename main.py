@@ -5,6 +5,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
     InputTextMessageContent
 from TeamTeleRoid.forcesub import ForceSub
 import asyncio
+from pyrogram import Client
 
 # Bot Client for Inline Search
 Bot = Client(
@@ -14,8 +15,9 @@ Bot = Client(
     bot_token=Config.BOT_TOKEN
 )
 
-# User Client for Searching in Channel.
+# User Client for Searching in Channel
 User = Client(
+    Config.USER_SESSION_STRING,
     api_id=Config.API_ID,
     api_hash=Config.API_HASH
 )
