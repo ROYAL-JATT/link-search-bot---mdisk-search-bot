@@ -6,7 +6,7 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH", "3f02c2df6069de8c1a2abf623da0a4b8")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "6435441332:AAHgIrWtZsZmESb7v9Q15vDCVeNWZ5uv1bA")
     BOT_SESSION_NAME = os.environ.get("BOT_SESSION_NAME", "LinkSearchBot")
-    USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", "")
+    USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", "BQF4fgoAvKQ36UtrGDOoWntMttIDofOPb8EoJ6LIQeEOCn-YnNZvRyTrZuWXZ_BQF0sQ4mJ39jUOA-roHv0v7jyE3KGdheQ5OD7kAlYOO0kCfp6eVej2MQRYhxGAAMXAKbAXdMx3nL_q2yuF7yWM17oTKfRZ9kxWlJiBTtR4Q9XC46TXDB7cPrswBXFtrVPc-X2HvtL-RwZbdnZ2YyoMFUeiLn5fnf2X1WQDFosQ6gPo0X-X5ciAxLn6_xP8S1shxop-skFp6timP8a5tqZGLRhHdBnjRR25fj3Pz59mjKYYw6-d6wvdmzGoeBmLyzI7DwfFaJ-8oU301z23xnwCuuD5tpe_rwAAAAF1aAloAA")
     CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -1001907163330))
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "Lisa_Auto_Filter_Pro_Bot")
     BOT_OWNER = int(os.environ.get("BOT_OWNER", "6651109872"))
