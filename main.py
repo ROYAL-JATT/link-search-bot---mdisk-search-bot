@@ -9,7 +9,6 @@ from pyrogram import Client
 
 # Bot Client for Inline Search
 Bot = Client(
-    session_name=Config.BOT_SESSION_NAME,
     api_id=Config.API_ID,
     api_hash=Config.API_HASH,
     bot_token=Config.BOT_TOKEN
