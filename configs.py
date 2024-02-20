@@ -9,6 +9,7 @@ class Config(object):
     USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", "BQF4fgoAvKQ36UtrGDOoWntMttIDofOPb8EoJ6LIQeEOCn-YnNZvRyTrZuWXZ_BQF0sQ4mJ39jUOA-roHv0v7jyE3KGdheQ5OD7kAlYOO0kCfp6eVej2MQRYhxGAAMXAKbAXdMx3nL_q2yuF7yWM17oTKfRZ9kxWlJiBTtR4Q9XC46TXDB7cPrswBXFtrVPc-X2HvtL-RwZbdnZ2YyoMFUeiLn5fnf2X1WQDFosQ6gPo0X-X5ciAxLn6_xP8S1shxop-skFp6timP8a5tqZGLRhHdBnjRR25fj3Pz59mjKYYw6-d6wvdmzGoeBmLyzI7DwfFaJ-8oU301z23xnwCuuD5tpe_rwAAAAF1aAloAA")
     CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -1001907163330))
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "Lisa_Auto_Filter_Pro_Bot")
+    NAME = os.environ.get("NAME", "Anyname")
     BOT_OWNER = int(os.environ.get("BOT_OWNER", "6651109872"))
     DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Jk:0@cluster0.em2cobu.mongodb.net/?retryWrites=true&w=majority")
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
